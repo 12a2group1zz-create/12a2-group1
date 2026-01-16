@@ -49,13 +49,14 @@ table
 }
 .cell_img {
 	width: 50%;
+	height:50%;
 }
 .cell_text {
 	width: 50%; padding-left: 5rem;
 }
 .img {
-	width: 100%; 
-	height: 50%;
+	width: 50%; 
+	height: 20%;
 }
 .img_tv {
     width: 50%; 
@@ -84,5 +85,6 @@ a:hover{
     color: magenta;
 
 }
+
 
 
