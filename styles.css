@@ -1,0 +1,170 @@
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+    background:#f3ede4;
+    color:#3b2f2f;
+}
+
+/* BANNER */
+.banner {
+    background:
+        linear-gradient(
+            rgba(60, 40, 20, 0.25),
+            rgba(60, 40, 20, 0.25)
+        ),
+        url("anh/ben.png") center center / cover no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    font-size:3rem;
+    background:rgba(255,255,255,.7);
+    padding:1rem 2rem;
+    border-radius:10px;
+    color:red;
+    display:inline-block;
+}
+
+/* SLOGAN + 3 Ô */
+.slogan{background:#e6d3b1;padding:2rem}
+.row{
+    display:flex;
+    justify-content:space-between;
+    max-width:1100px;
+    margin:auto;
+}
+.block_3{
+    width:33.33%;
+    text-align:center;
+    background:#f8f1e7;
+    border:2px solid #b08968;
+    border-radius:15px;
+    padding:2rem 1rem;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+.block_3 h2{color:#6b3e26;margin-bottom:.8rem}
+.block_3:hover{
+    transform:translateY(-12px) scale(1.08);
+    background:#fff3e0;
+    border-color:red;
+    color:red;
+}
+.block_3:hover h2{color:red}
+
+/* PERSON */
+.person{
+    display:flex;
+    align-items:center;
+    max-width:1100px;
+    margin:3rem auto;
+    gap:2rem;
+    background:#fff8ee;
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+.person.reverse{flex-direction:row-reverse}
+.text,.image{width:50%}
+.text h3{color:#6b3e26;margin-bottom:1rem}
+.text ul{margin-left:1.2rem;margin-bottom:1rem}
+.image{text-align:center}
+.image img{
+    width:100%;
+    max-width:300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* MEDIA */
+img{
+    display:block;
+    margin:20px auto;
+    max-width:700px;
+    width:90%;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.2);
+}
+video{
+    display:block;
+    margin:20px auto;
+    max-width:70%;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.2);
+}
+
+/* BUTTON */
+.btn,button{
+    padding:.5rem 1.2rem;
+    background:#6b3e26;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
+}
+.btn:hover,button:hover{background:#a52a2a}
+
+/* FORM */
+form fieldset{
+    background:#fff8ee;
+    border:2px solid #b08968;
+    border-radius:15px;
+    padding:20px;
+}
+input,textarea{
+    border:1px solid #b08968;
+    border-radius:6px;
+    padding:6px;
+}
+
+/* FOOTER */
+footer{
+    background:#d6b98c;
+    padding:2rem 0;
+    margin-top:3rem;
+}
+.footer-col{width:45%}
+footer ul{list-style:none}
+footer a{
+    color:#8b0000;
+    text-decoration:underline;
+    font-weight:bold;
+}
+footer a:hover{color:red}
+/* NỀN PHẦN GIỮA TRANG CON – GIỐNG INDEX */
+body:not(.index-page) > div[style*="width:80%"] {
+    background: #fff8ee !important;
+}
+/* NỀN PHẦN GIỮA TRANG CON – GIỐNG INDEX */
+body > div[style*="width: 80%"] {
+    background: #fff8ee !important;
+}
+.anh {
+  text-align: center;}
+
+/* HIỆU ỨNG BẬT LÊN + VIỀN CHO ẢNH NHÂN VẬT */
+.image img {
+   
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.image img:hover {
+    transform: translateY(-15px) scale(1.08);
+    
+    border-color: #8b0000;
+}
+

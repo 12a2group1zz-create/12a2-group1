@@ -1,0 +1,240 @@
+
+   
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+    background:#f3ede4;
+    color:#3b2f2f;
+}
+
+
+.banner h1{
+    font-size:3rem;
+    background:rgba(255,255,255,.7);
+    padding:1rem 2rem;
+    border-radius:10px;
+    color:#5a3e1b;
+    display:inline-block;
+}
+
+.banner {
+    background:
+        linear-gradient(
+            rgba(60, 40, 20, 0.25),
+            rgba(60, 40, 20, 0.25)
+        ),
+        url("anh/ban.jpg") center center / cover no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* SLOGAN + 3 Ô */
+.slogan{;padding:2rem}
+.row{
+    display:flex;
+    justify-content:space-between;
+    max-width:1100px;
+    margin:auto;
+}
+.block_3{
+    width:33.33%;
+    text-align:center;
+    background:#f8f1e7;
+    border:2px solid #b08968;
+    border-radius:15px;
+    padding:2rem 1rem;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+.block_3 h2{color:#6b3e26;margin-bottom:.8rem}
+.block_3:hover{
+    transform:translateY(-12px) scale(1.08);
+    background:#fff3e0;
+    border-color:red;
+    color:red;
+}
+.block_3:hover h2{color:red}
+
+
+
+
+
+
+/* ===== BẢNG NHÂN VẬT ===== */
+table {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    border-spacing: 30px;
+}
+
+table img.anh {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+}
+
+table img.anh:hover {
+    transform: scale(1.05);
+}
+
+td {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    vertical-align: top;
+}
+
+h3 {
+    color: #8b0000;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== NÚT CHI TIẾT ===== */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #b22222;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+   background: #b22222;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-col {background: #b22222;
+    width: 300px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffdede;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    table {
+        border-spacing: 15px;
+    }
+
+    table img.anh {
+        width: 280px;
+        height: 400px;
+    }
+}
+/* ============================= */
+/* CHỈ LÀM ĐẸP TRANG CHI TIẾT */
+/* (KHÔNG ẢNH HƯỞNG INDEXNEW) */
+/* ============================= */
+
+/* Khối nội dung chính 3 trang */
+body > div[style*="width: 80%"] {
+    background: #fffaf2 !important; /* trắng ngà – giấy cổ */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    border: 2px solid #d2b48c;
+}
+
+/* Ảnh trong trang chi tiết */
+body > div[style*="width: 80%"] img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+body > div[style*="width: 80%"] img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* Video */
+body > div[style*="width: 80%"] video {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Tiêu đề trong trang chi tiết */
+body > div[style*="width: 80%"] h1,
+body > div[style*="width: 80%"] h2 {
+    color: #7a3e1d;
+}
+
+/* Đoạn văn */
+body > div[style*="width: 80%"] p {
+    text-align: justify;
+    line-height: 1.8;
+}
+/* ============================= */
+/* CÂN BẰNG VIDEO & CHỮ */
+/* CHỈ ÁP DỤNG 3 TRANG CHI TIẾT */
+/* ============================= */
+
+/* Bảng trong trang chi tiết */
+body > div[style*="width: 80%"] table {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+/* Hai cột video & chữ */
+body > div[style*="width: 80%"] th {
+    width: 50%;
+    vertical-align: top; /* canh đều từ trên xuống */
+}
+
+/* Video */
+body > div[style*="width: 80%"] video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
